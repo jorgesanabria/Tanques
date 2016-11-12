@@ -1,0 +1,41 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Entity/Properties/Juego/Juego.cs">
+    <Files>
+      <File FileName="Entity/Game1.cs" Line="31" Column="32" />
+      <File FileName="Entity/Properties/World/World.cs" Line="1" Column="1" />
+      <File FileName="Entity/Properties/Juego/Juego.cs" Line="162" Column="55" />
+      <File FileName="Entity/Properties/World/Entity.cs" Line="1" Column="1" />
+      <File FileName="Entity/Properties/Entidades/Enemigo.cs" Line="1" Column="1" />
+      <File FileName="Entity/Properties/Entidades/Player.cs" Line="1" Column="1" />
+      <File FileName="Entity/Properties/test/PruebaTexto.cs" Line="1" Column="1" />
+      <File FileName="Entity/Properties/Interfaz/Datos.cs" Line="1" Column="1" />
+      <File FileName="Entity/Properties/World/Utils/AsynchronousEntity.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Entity" expanded="True">
+            <Node name="Content" expanded="True" />
+            <Node name="Properties" expanded="True">
+              <Node name="Entidades" expanded="True" />
+              <Node name="Interfaz" expanded="True" />
+              <Node name="Juego" expanded="True">
+                <Node name="Juego.cs" selected="True" />
+              </Node>
+              <Node name="test" expanded="True" />
+              <Node name="World" expanded="True">
+                <Node name="Movement" expanded="True" />
+                <Node name="Utils" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

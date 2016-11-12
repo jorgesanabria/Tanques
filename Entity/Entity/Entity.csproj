@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{33FBB3C7-38B1-441E-82FD-DE4707BF0174}</ProjectGuid>
+    <ProjectTypeGuids>{9B831FEF-F496-498F-9FE8-180DA5CB4258};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Entity</RootNamespace>
+    <AssemblyName>Entity</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="OpenTK">
+      <Package>opentk</Package>
+    </Reference>
+    <Reference Include="MonoGame.Framework.Linux">
+      <Package>monogame</Package>
+    </Reference>
+    <Reference Include="Lidgren.Network">
+      <Package>monogame</Package>
+    </Reference>
+    <Reference Include="Tao.Sdl">
+      <Package>tao-sdl</Package>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Game1.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\World\World.cs" />
+    <Compile Include="Properties\World\Graphis\Grid.cs" />
+    <Compile Include="Properties\World\Entity.cs" />
+    <Compile Include="Properties\World\Movement\CollisionRectangle.cs" />
+    <Compile Include="Properties\World\Movement\Direction.cs" />
+    <Compile Include="Properties\World\Graphis\Map.cs" />
+    <Compile Include="Properties\World\Utils\Rnd.cs" />
+    <Compile Include="Properties\Entidades\Tanque.cs" />
+    <Compile Include="Properties\Entidades\Enemigo.cs" />
+    <Compile Include="Properties\Entidades\Player.cs" />
+    <Compile Include="Properties\World\IScene.cs" />
+    <Compile Include="Properties\test\PruebaEscena.cs" />
+    <Compile Include="Properties\Entidades\Bala.cs" />
+    <Compile Include="Properties\Entidades\Explosion.cs" />
+    <Compile Include="Properties\Interfaz\Datos.cs" />
+    <Compile Include="Properties\test\PruebaTexto.cs" />
+    <Compile Include="Properties\World\Utils\AsynchronousEntity.cs" />
+    <Compile Include="Properties\Juego\Juego.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon.png" />
+    <None Include="Content\Imagenes\Tiles.png" />
+    <None Include="Content\Fuentes\fuente1.xnb" />
+    <None Include="Content\Sonido\gunshot.wav" />
+    <None Include="Content\Sonido\rumble.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\" />
+    <Folder Include="Properties\World\" />
+    <Folder Include="Properties\World\Graphis\" />
+    <Folder Include="Properties\World\Movement\" />
+    <Folder Include="Properties\World\Utils\" />
+    <Folder Include="Properties\Entidades\" />
+    <Folder Include="Content\Imagenes\" />
+    <Folder Include="Content\Fuentes\" />
+    <Folder Include="Properties\test\" />
+    <Folder Include="Content\Sonido\" />
+    <Folder Include="Properties\Interfaz\" />
+    <Folder Include="Properties\Juego\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
